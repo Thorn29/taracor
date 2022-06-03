@@ -1,0 +1,50 @@
+.Sidebar {
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, #fafafa, #fff, #fafafa);
+  position: absolute;
+  top: 0;
+  left: -250px;
+  border-right: 2px solid #dfdfdf;
+  box-sizing: border-box;
+}
+
+.Sidebar::before {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 60px;
+  background-image: url('./logo.png');
+  background-size: cover;
+  margin: 30px auto;
+}
+
+.Sidebar ul li {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Sidebar ul li a {
+  display: block;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 1rem;
+  color: #999;
+  text-transform: uppercase;
+  text-align: center;
+  transition: .3s;
+}
+
+.Sidebar ul li a.active, .Sidebar ul li a:hover {
+  color: #dd101e;
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  .Sidebar {
+    display: none;
+  }
+}

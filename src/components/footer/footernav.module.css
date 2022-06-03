@@ -1,0 +1,43 @@
+.FooterNav {
+  width: 90%;
+  margin: 0 5%;
+  padding: 15px 0;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.FooterNav li {
+  width: 90%;
+  margin: 4px 5%;
+}
+
+.FooterNav li a {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #dfdfdf;
+  font-size: .85rem;
+}
+
+.FooterNav li a.active, .FooterNav li a:hover {
+  color: #dd101e;
+}
+
+@media (min-width: 830px) {
+
+  .FooterNav {
+    display: flex;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 0;
+    border: none;
+  }
+
+  .FooterNav li {
+    width: auto;
+    margin: 0;
+  }
+
+  .FooterNav li a {
+    font-size: .7rem;
+    padding: 0 5px;
+  }
+
+}

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Layout {
+  width: 100%;
+  transition: .7s;
+}
+
+.Layout.active {
+  transform: translateX(250px);
+}
+
+.Front {
+  background: linear-gradient(to top right, #efefef, #fff);
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.PageName {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.6rem;
+  color: #dd101e;
+}
+
+@media (min-width: 1024px) {
+
+  .PageName {
+    display: none;
+  }
+
+  .Layout.active {
+    transform: translateX(0);
+  }
+
+  .Front {
+    margin-bottom: 9rem;
+    position: relative;
+  }
+
+  .Container {
+    width: 65%;
+    margin: 0 auto;
+    border-top: none;
+    box-sizing: border-box;
+    min-height: 45vh;
+  }
+
+}

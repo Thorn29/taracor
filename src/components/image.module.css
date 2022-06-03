@@ -1,0 +1,43 @@
+.Frame {
+  width: 100%;
+}
+
+.Frame.full {
+  margin: 30px auto;
+  border: 1px solid #dd101e;
+}
+
+.Frame.half {
+  border: 1px solid #dd101e;
+}
+
+.Frame.half.trans {
+  max-width: 350px;
+  margin: 0 auto;
+  border: none;
+}
+
+@media (min-width: 630px) {
+
+  .Frame.full {
+    width: 90%;
+    height: 170px;
+    overflow: hidden;
+  }
+
+  .Frame.full img {
+    margin-top: -10%;
+  }
+
+  .Frame.half {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+}
+
+@media (min-width: 700px) {
+
+
+}

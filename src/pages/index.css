@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500;700&family=Noto+Sans+JP:wght@400;500;900&family=Raleway:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intropic {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.intropic img {
+  box-shadow: 1px 1px 5px 10px #f00;
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+  font-size: .85rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+.text strong {
+  color: #dd101e;
+  font-weight: 500;
+}
+
+.text a {
+  color: #dd101e;
+  font-weight: bold;
+}
+
+.text a:hover {
+  color: #c50000;
+}
+
+.grey-header {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.7rem;
+  padding-left: 5%;
+  color: #dfdfdf;
+  line-height: 3.5rem;
+}
+
+.fullwidth {
+  width: 100%;
+  padding: 20px 10%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.halfwidth {
+  width: 100%;
+  padding: 20px 10%;
+}
+
+.fullwidth > .img-frame {
+  margin: 20px auto;
+  height: auto;
+}
+
+.text-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-size: .82rem;
+  font-weight: 500;
+}
+
+.text-list li::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: red;
+  margin-right: 5px;
+  background: url('./img/list-icon.png');
+  background-size: cover;
+}
+
+.contact-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.8rem;
+  color: #212121;
+  margin: 20px auto;
+}
+
+.contact-title + .text a {
+  font-family: sans-serif;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+@media (min-width: 700px) {
+
+.halfwidth {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.halfwidth .text {
+  width: 80%;
+}
+
+.text-list {
+  width: 80%;
+}
+
+.contact-title {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}
+
+.contact-title + .text {
+  display: block;
+  max-width: 300px;
+}
+
+}

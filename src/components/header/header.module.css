@@ -1,0 +1,41 @@
+.Header {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  padding-top: 5px;
+}
+
+.Logo {
+  width: 130px;
+  height: 60px;
+  background-image: url('./logo.png');
+  background-size: cover;
+  margin: 5px auto;
+  margin-top: 0;
+}
+
+@media (max-width: 1023px) {
+  .Header ul {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .Header {
+    border-bottom: none;
+    padding-top: 0;
+  }
+
+  .Logo {
+    margin: 5px auto;
+  }
+
+  .banner {
+    width: 100%;
+    height: 25vw;
+    background: blue;
+  }
+
+}

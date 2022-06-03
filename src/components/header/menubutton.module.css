@@ -1,0 +1,48 @@
+.MenuButton {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 21px;
+  left: 15px;
+}
+
+.MenuButton span {
+  width: 100%;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+
+.MenuButton span:nth-child(2), .MenuButton span:nth-child(3) {
+  top: 10px;
+}
+
+.MenuButton span:nth-child(4) {
+  top: 20px;
+}
+
+.MenuButton.active span:nth-child(1), .MenuButton.active span:nth-child(4) {
+  opacity: 0;
+}
+
+.MenuButton.active span:nth-child(2) {
+  transform: rotate(45deg);
+  background: #c50000;
+}
+
+.MenuButton.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  background: #c50000;
+}
+
+@media (min-width: 1024px) {
+
+  .MenuButton {
+    display: none;
+  }
+
+}
